@@ -1,3 +1,3 @@
 library loading_card;
 
-export '';
+export 'src/src_loading_card.dart';
