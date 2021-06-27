@@ -51,6 +51,10 @@ class ExampleLoadingCard extends StatelessWidget {
   }
 }
 ```
+### Output Example
+[![Output][]][Output]
+
+
 
 [Loading Card Cover]: https://github.com/farhanfadila1717/loading_card/blob/master/display/loading_card_cover.png
-[Example]: https://github.com/farhanfadila1717/pray_clock/blob/master/display/home_pray_clock.png
+[Output]: https://github.com/farhanfadila1717/loading_card/blob/master/display/loading_card.gif
