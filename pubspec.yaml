@@ -1,6 +1,7 @@
 name: loading_card
-description: Loading card is flutter package
+description: Loading card is flutter package. This package can help you create a loading card display between two colors
 version: 0.0.1
+homepage: https://github.com/farhanfadila1717/loading_card
 maintener: Farhan Fadila (@farhanfadila1717)
 
 environment:
