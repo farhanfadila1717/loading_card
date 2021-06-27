@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loading_card/loading_card.dart';
 
 void main() => runApp(
       MaterialApp(
@@ -19,7 +20,25 @@ class ExampleLoadingCard extends StatelessWidget {
         padding: const EdgeInsets.all(24),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [],
+          children: [
+            LoadingCard(
+              height: 30,
+              width: MediaQuery.of(context).size.width * .2,
+              borderRadius: 30,
+            ),
+            const Padding(padding: const EdgeInsets.only(top: 24)),
+            LoadingCard(
+              height: MediaQuery.of(context).size.height * .2,
+              width: MediaQuery.of(context).size.width - 48,
+              borderRadius: 30,
+            ),
+            const Padding(padding: const EdgeInsets.only(top: 24)),
+            LoadingCard(
+              height: MediaQuery.of(context).size.height * .15,
+              width: MediaQuery.of(context).size.width - 48,
+              borderRadius: 30,
+            ),
+          ],
         ),
       ),
     );
