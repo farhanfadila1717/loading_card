@@ -1,4 +1,4 @@
-## [![hero][]][hero]
+## LoadingCard
 [![flutter][]][web flutter] [![paypal][]][paypal account] <br>
 Loading card is flutter package. This package can help you create a loading card display between two colors
 
@@ -50,8 +50,8 @@ class ExampleLoadingCard extends StatelessWidget {
 ---
 
 ### 🚧 Maintener 
-[![account avatar][]][github account]
-**Farhan Fadila**
+[![account avatar][]][github account] <br>
+**Farhan Fadila**<br>
 📫 How to reach me: farhan.fadila1717@gmail.com
 
 ### ❤️ Suport Maintener
