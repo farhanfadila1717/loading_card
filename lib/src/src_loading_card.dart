@@ -6,12 +6,12 @@ class LoadingCard extends StatefulWidget {
     required this.height,
     required this.width,
     required this.borderRadius,
-    this.animationDuration = const Duration(seconds: 1),
+    this.animationDuration = const Duration(milliseconds: 750),
     this.colorOne = const Color(0xFFE5E5E5),
     this.colorTwo = const Color(0xFFF0F0F0),
     this.curve = Curves.easeInOutSine,
   })  : assert(
-          height != double.infinity || height != double.infinity,
+          height != double.infinity || width != double.infinity,
           'height or width cannot contain value `double.infinity`\n',
         ),
         super(key: key);
@@ -31,7 +31,7 @@ class LoadingCard extends StatefulWidget {
 class _LoadingCardState extends State<LoadingCard>
     with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
-  late Animation<double> _offset;
+  late Animation<Offset> _offset;
   late Color _backgroudColor, _loadingColor;
 
   bool _isBackgroundOnTop = false;
@@ -47,7 +47,7 @@ class _LoadingCardState extends State<LoadingCard>
               _animationController.forward();
             }
           });
-    _offset = Tween<double>(begin: 0, end: 1).animate(
+    _offset = Tween<Offset>(begin: Offset.zero, end: Offset(1.0, 0.0)).animate(
         CurvedAnimation(parent: _animationController, curve: widget.curve));
     _backgroudColor = widget.colorTwo;
     _loadingColor = widget.colorOne;
@@ -87,9 +87,8 @@ class _LoadingCardState extends State<LoadingCard>
       child: AnimatedBuilder(
         animation: _animationController,
         builder: (context, child) {
-          return Transform.translate(
-            offset:
-                Offset(((widget.width + widget.width * .3) * _offset.value), 0),
+          return FractionalTranslation(
+            translation: _offset.value,
             child: child,
           );
         },
