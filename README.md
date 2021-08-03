@@ -1,15 +1,8 @@
-# ![Loading Card Cover][Loading Card Cover]
-<p align="left">
-  <a href="https://flutter.dev">
-    <img src="https://img.shields.io/badge/Platform-Flutter-02569B?logo=flutter"
-      alt="Platform" />
-  </a>
-  <a href="https://www.paypal.me/farhanfadila1717">
-    <img src="https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal"
-      alt="Donate" />
-  </a>
-</p><br>
+## [![hero][]][hero]
+[![flutter][]][web flutter] [![paypal][]][paypal account] <br>
 Loading card is flutter package. This package can help you create a loading card display between two colors
+
+---
 
 ## Example
 ```dart
@@ -54,7 +47,27 @@ class ExampleLoadingCard extends StatelessWidget {
 ### Output Example
 [![Output][]][Output]
 
+---
+
+### 🚧 Maintener 
+[![account avatar][]][github account]
+**Farhan Fadila**
+📫 How to reach me: farhan.fadila1717@gmail.com
+
+### ❤️ Suport Maintener
+[![paypal][]][paypal account] [![badge linktree][]][linktree account]
 
 
-[Loading Card Cover]: https://github.com/farhanfadila1717/loading_card/blob/master/display/loading_card_cover.png
+[hero]: https://github.com/farhanfadila1717/loading_card/blob/master/display/loading_card_cover.png
 [Output]: https://github.com/farhanfadila1717/loading_card/blob/master/display/loading_card.gif
+[hero]:https://github.com/farhanfadila1717/flutter_package/blob/master/display/slide_coutdown/hero.gif
+[output]: https://github.com/farhanfadila1717/flutter_package/blob/master/display/slide_coutdown/output.gif
+[flutter]: https://img.shields.io/badge/Platform-Flutter-02569B?logo=flutter
+[web flutter]: https://flutter.dev
+[paypal]: https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal
+[paypal account]: https://www.paypal.me/farhanfadila1717
+[account avatar]: https://avatars.githubusercontent.com/u/43161050?s=80
+[github account]: https://github.com/farhanfadila1717
+
+[badge linktree]: https://img.shields.io/badge/Linktree-farhanfadila-orange
+[linktree account]: https://linktr.ee/farhanfadila
